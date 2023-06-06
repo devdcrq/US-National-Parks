@@ -1,0 +1,7 @@
+<resources>
+    <style name="Base.Theme.USAStateParks" parent="Theme.Material3.DayNight.NoActionBar">
+         <item name="colorPrimary">@color/primary</item>
+    </style>
+
+    <style name="Theme.USAStateParks" parent="Base.Theme.USAStateParks" />
+</resources>

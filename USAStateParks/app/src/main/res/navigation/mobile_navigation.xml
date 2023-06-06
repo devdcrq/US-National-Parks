@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/parksFragment">
+
+    <fragment
+        android:id="@+id/parksFragment"
+        android:name="com.devdcrq.usastateparks.view.ParksFragment"
+        android:label="fragment_parks"
+        tools:layout="@layout/fragment_parks">
+        <action
+            android:id="@+id/action_parksFragment_to_websiteFragment"
+            app:destination="@id/websiteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.devdcrq.usastateparks.view.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_favoritesFragment_to_websiteFragment"
+            app:destination="@id/websiteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.devdcrq.usastateparks.view.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_websiteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/websiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/websiteFragment"
+        android:name="com.devdcrq.usastateparks.view.WebsiteFragment"
+        android:label="fragment_website"
+        tools:layout="@layout/fragment_website">
+        <argument
+            android:name="anyPark"
+            app:argType="com.devdcrq.usastateparks.util.Equatable" />
+    </fragment>
+</navigation>

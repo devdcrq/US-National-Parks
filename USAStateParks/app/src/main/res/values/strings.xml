@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">USAStateParks</string>
+    <string name="title_parks_fragment">Parks</string>
+    <string name="title_favorites_fragment">Favorites</string>
+    <string name="title_map_fragment">Map</string>
+    <string name="image_content_description">park image</string>
+    <string name="fab_content_description">add to favorites button</string>
+    <string name="hint_search">Search...</string>
+    <string name="filter_content_description">filter button</string>
+</resources>

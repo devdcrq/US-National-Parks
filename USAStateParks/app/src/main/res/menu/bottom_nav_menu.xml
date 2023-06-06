@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/parksFragment"
+        android:title="@string/title_parks_fragment"
+        android:icon="@drawable/ic_parks"/>
+
+    <item android:id="@+id/favoritesFragment"
+        android:title="@string/title_favorites_fragment"
+        android:icon="@drawable/ic_favorite"/>
+
+    <item android:id="@+id/mapFragment"
+        android:title="@string/title_map_fragment"
+        android:icon="@drawable/ic_map"/>
+
+</menu>
